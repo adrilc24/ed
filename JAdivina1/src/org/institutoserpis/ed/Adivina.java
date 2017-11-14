@@ -23,9 +23,10 @@ public class Adivina {
 			numero = tcl.nextLine();
 			numeroUsuario = Integer.parseInt(numero);
 		}
+		
 		System.out.println("");
 		System.out.println("El número "+numeroAleatorio+" es correcto");
-		System.out.println("Usted ha necesitado "+contadorIntentos+" intentos");
+		System.out.printf("Usted ha necesitado "+contadorIntentos+" intentos");
 		
 	}
 
