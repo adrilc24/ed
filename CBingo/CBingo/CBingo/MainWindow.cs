@@ -46,8 +46,8 @@ public partial class MainWindow: Gtk.Window
 			int indexAleatorio = random.Next(bolas.Count);
 			int bola = bolas[indexAleatorio]; //Bola Aleatoria
 			bolas.Remove(bola);
-			int index = bola - 1;
-			buttons [index].ModifyBg(StateType.Normal, colorGREEN);
+			int indexPanel = bola - 1;
+			buttons [indexPanel].ModifyBg(StateType.Normal, colorGREEN);
 
 		};
 
