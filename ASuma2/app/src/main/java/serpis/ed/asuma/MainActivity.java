@@ -34,5 +34,8 @@ public class MainActivity extends AppCompatActivity {
         //BigDecimal result = number1.subtract(number2); Para la resta
         textViewResult.setText(result.toString());
     }
+    private BigDecimal getNumber1(){
+        return new BigDecimal(editText1.getText().toString());
+    }
 
 }

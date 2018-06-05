@@ -3,16 +3,21 @@ package org.institutoserpis.ed;
 public class Vector {
 
 	public static void main(String[] args) {
-		int [] v = new int[] {9,15,7,12,6};
+//		int [] v = new int[] {9,15,7,12,6};
+//		
+//		for (int index=0; index < 5; index++) 
+//			System.out.printf("v[%s]=%s ", index, v[index]);
+//		System.out.println();
+//		
+//		int valor = 4;
+//		int position = indexof(v, valor);
+//		int min = min(v); 
+//		System.out.println("minimo = "+min);
 		
-		for (int index=0; index < 5; index++) 
-			System.out.printf("v[%s]=%s ", index, v[index]);
-		System.out.println();
-		
-		int valor = 4;
-		int position = indexof(v, valor);
-		int min = min(v); 
-		System.out.println("minimo = "+min);
+		int n = Integer.MAX_VALUE;
+		System.out.println("n (Integer.MAXVALUE) = "+n);
+		n = n+1;
+		System.out.println("n (Integer.MAXVALUE + 1) = "+n);
 		
 	}
 	
@@ -63,4 +68,11 @@ public class Vector {
 				indexofmin = index;
 		return indexofmin;
 	}
+	
+	public static int binarySearch(int[] v, int value) {
+		return -2;
+	}
+	
+	
+	
 }

@@ -31,4 +31,51 @@ public class VectorTest {
 		assertEquals(43, Vector.suma(new int[] {9,15,7,12}));
 	}
 	
+	@Test
+	public void binarySearchNotFound() {
+		int [] v = new int [] {7, 14, 21, 27, 31};
+		assertEquals(-1, Vector.binarySearch(v, 6));
+		assertEquals(-1, Vector.binarySearch(v, 10));
+		assertEquals(-1, Vector.binarySearch(v, 16));
+		assertEquals(-1, Vector.binarySearch(v, 29));
+		assertEquals(-1, Vector.binarySearch(v, 33));
+	}
+	
+	@Test
+	public void binarySearchFound() {
+		int [] v = new int [] {7, 14, 21, 27, 31};
+		assertEquals(0, Vector.binarySearch(v, 7));
+		assertEquals(1, Vector.binarySearch(v, 14));
+		assertEquals(4, Vector.binarySearch(v, 31));
+	}
+	
+	@Test
+	public void binarySearchVector() {
+		int [] v = new int [] {7, 14, 21, 27, 31};
+		assertEquals(0, Vector.binarySearch(v, 7));
+		assertEquals(1, Vector.binarySearch(v, 14));
+		assertEquals(4, Vector.binarySearch(v, 31));
+	}
+	
+	public void binarySearchOverflow() {
+//		int [] v = new int[Integer.MAX_VALUE];
+//		for (int i = 0; i < Integer.MAX_VALUE; i++)
+//			v[i] = i+1;
+//		assertEquals(-1, Vector.binarySearch(v, Integer.MAX_VALUE));
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
